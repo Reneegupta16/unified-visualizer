@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unified Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Unified Data Structures and Algorithms Visualizer</h1>
+        <div class="module" id="contact-management">
+            <h2>Contact Management System</h2>
+            <input type="text" id="contactName" placeholder="Name">
+            <input type="email" id="contactEmail" placeholder="Email">
+            <input type="tel" id="contactPhone" placeholder="Phone">
+            <button onclick="addContact()">Add Contact</button>
+            <button onclick="loadContacts()">Load Contacts</button>
+            <ul id="contactList"></ul>
+        </div>
+
+        <div class="module" id="sorting-algorithm">
+            <h2>Sorting Algorithm Visualizer</h2>
+            <input type="text" id="sortInput" placeholder="Enter numbers separated by commas">
+            <button onclick="sortArray('bubble')">Bubble Sort</button>
+            <button onclick="sortArray('quick')">Quick Sort</button>
+            <div id="sortOutput"></div>
+        </div>
+
+        <div class="module" id="pathfinding-algorithm">
+            <h2>Pathfinding Algorithm Visualizer</h2>
+            <button onclick="runPathfinding('dijkstra')">Dijkstra's Algorithm</button>
+            <button onclick="runPathfinding('astar')">A* Algorithm</button>
+            <div id="pathOutput"></div>
+        </div>
+
+        <div class="module" id="bst-visualizer">
+            <h2>Binary Search Tree Visualizer</h2>
+            <input type="number" id="bstValue" placeholder="Enter value">
+            <button onclick="bstInsert()">Insert</button>
+            <button onclick="bstDelete()">Delete</button>
+            <button onclick="loadTree()">Load Tree</button>
+            <svg id="bstCanvas" width="600" height="400"></svg>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
