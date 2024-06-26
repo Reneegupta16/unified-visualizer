@@ -1,1 +1,0 @@
-mvn archetype:generate -DgroupId=com.example -DartifactId=unifiedvisualizer -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
